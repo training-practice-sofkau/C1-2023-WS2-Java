@@ -10,6 +10,13 @@ package functional.interfaces.custom;
  */
 public class Exercise5 {
     public static void main(String[] args) {
+        Comparision comparision = new Comparision();
+        System.out.println(comparision.comparator(1,2));
+        System.out.println(comparision.comparator(1,1));
+        System.out.println(comparision.comparator(2,1));
 
+        System.out.println(comparision.comparator("oso", "osa"));
+        System.out.println(comparision.comparator("oso","mogolla"));
+        System.out.println(comparision.comparator("pedro", "palo"));
     }
 }
