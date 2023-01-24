@@ -1,7 +1,4 @@
-package functional.interfaces.byfunction;
-
-import java.util.function.Function;
-import java.util.function.Predicate;
+package functional.interfaces.byfunction.Exercise12;
 
 /*
 * Number Comparison
@@ -13,8 +10,9 @@ public class Exercise12 {
         Integer n = 2;
         Integer m = 4;
 
+        NumberComparator<Integer> greaterNumber = (x, y) -> x > y;
 
-
-        Predicate<Integer, Integer> greaterNumber = (x, y) -> Integer.compare(x, y);
+        System.out.println(greaterNumber.test(n,m));
+        System.out.println(greaterNumber.test(m,n));
     }
 }
