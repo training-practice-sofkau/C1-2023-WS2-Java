@@ -6,7 +6,7 @@ package functional.recursion;
  */
 public class Exercise3 {
     public static void main(String[] args) {
-        Fibonacci.calculate(1);
-
+        int num = 24;
+        System.out.println("The " + num + "th Fibonacci number is: " + Fibonacci.calculate(num));
     }
 }
