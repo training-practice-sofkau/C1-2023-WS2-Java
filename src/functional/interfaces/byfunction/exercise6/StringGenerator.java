@@ -5,8 +5,10 @@ import java.util.function.Supplier;
 public class StringGenerator implements Supplier<String> {
     @Override
     public String get() {
-        //TO-DO: The logic in order to show a random string
-
-        return null;
+        //Returns 3 letters
+        String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz";
+        return String.valueOf(letters.charAt((int) (Math.random() * letters.length())))+
+                letters.charAt((int) (Math.random() * letters.length())) +
+                letters.charAt((int) (Math.random() * letters.length()));
     }
 }
