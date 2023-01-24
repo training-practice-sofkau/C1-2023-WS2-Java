@@ -18,8 +18,9 @@ public class Exercise8 {
                 int nextSpace = phrase.indexOf(' ');
                 if (nextSpace > -1) {
                     wordCounter++;
-                    phrase = phrase.substring(nextSpace+1);
-                }else{
+                    phrase = phrase.substring(nextSpace + 1);
+                } else {
+                    wordCounter++;
                     phraseWhile = false;
                 }
             }
@@ -32,8 +33,9 @@ public class Exercise8 {
                 int nextSpace = phrase.indexOf(',');
                 if (nextSpace > -1) {
                     wordCounter++;
-                    phrase = phrase.substring(nextSpace+1);
-                }else{
+                    phrase = phrase.substring(nextSpace + 1);
+                } else {
+                    wordCounter++;
                     phraseWhile = false;
                 }
             }
@@ -46,8 +48,9 @@ public class Exercise8 {
                 int nextSpace = phrase.indexOf(';');
                 if (nextSpace > -1) {
                     wordCounter++;
-                    phrase = phrase.substring(nextSpace+1);
-                }else{
+                    phrase = phrase.substring(nextSpace + 1);
+                } else {
+                    wordCounter++;
                     phraseWhile = false;
                 }
             }
@@ -56,9 +59,9 @@ public class Exercise8 {
         String spaceSeparatedPhrase = "hello world this a phrase of 8 words";
         String comaSeparatedPhrase = "hello,world,this,a,phrase,of,only,9,words";
         String semicolonSeparatedPhrase = "hello;world;this;a;phrase;of;exactly;10;single;words";
-        System.out.println(getWordCount(spaceSeparatedCounter, spaceSeparatedPhrase));
-        System.out.println(getWordCount(comaSeparatedCounter, comaSeparatedPhrase));
-        System.out.println(getWordCount(semicolonSeparatedCounter, semicolonSeparatedPhrase));
+        System.out.println(spaceSeparatedPhrase +" -- result --"+ getWordCount(spaceSeparatedCounter, spaceSeparatedPhrase));
+        System.out.println(comaSeparatedPhrase +" -- result --"+ getWordCount(comaSeparatedCounter, comaSeparatedPhrase));
+        System.out.println(semicolonSeparatedPhrase +" -- result --"+ getWordCount(semicolonSeparatedCounter, semicolonSeparatedPhrase));
     }
 
     static Integer getWordCount(Function<String, Integer> countingFunction, String phrase) {

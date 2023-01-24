@@ -17,9 +17,9 @@ public class Exercise7version2<T extends Number> implements Function<T, String> 
     public static void main(String[] args) {
 
         Exercise7version2<Number> exercise7 = new Exercise7version2<>();
-        exercise7.apply(10);
-        exercise7.apply(10.0);
-        exercise7.apply(12311231);
+        System.out.println(exercise7.apply(10));
+        System.out.println(exercise7.apply(10.0));
+        System.out.println(exercise7.apply(12311231));
 
     }
 }
