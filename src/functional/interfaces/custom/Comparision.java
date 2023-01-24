@@ -1,9 +1,16 @@
 package functional.interfaces.custom;
 
-public class Comparision implements CustomComparator{
+public class Comparision implements CustomComparator<Integer> {
+
     @Override
-    public int comparator(Object o1, Object o2) {
-        //TO-DO: Implement the neccesary logic to acomplish the assessment. Just consider String and Integer classses
-        return 0;
+    public int comparator(Integer o1, Integer o2) {
+        if (o1<o2) {
+            return -1;
+        } else if (o1> o2) {
+            return 1;
+        } else {
+
+            return 0;
+        }
     }
 }

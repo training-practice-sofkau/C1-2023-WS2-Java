@@ -1,6 +1,6 @@
 package functional.interfaces.custom;
 
 @FunctionalInterface
-public interface CustomComparator {
-    public int comparator(Object o1, Object o2);
+public interface CustomComparator<T> {
+    public int comparator(T o1,T o2);
 }
