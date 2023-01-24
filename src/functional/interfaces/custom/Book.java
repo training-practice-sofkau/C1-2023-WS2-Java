@@ -21,4 +21,16 @@ public class Book implements CustomComparator<Book>{
             return 0;
         }
     }
+
+    public int getYear() {
+        return year;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", year=" + year +
+                '}';
+    }
 }

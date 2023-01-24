@@ -1,6 +1,7 @@
 package functional.interfaces.custom;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /*
@@ -24,10 +25,14 @@ public class Exercise5 {
         }
         };
 
-        Comparision comp = new Comparision();
+        Comparison comp = new Comparison();
 
         System.out.println(comp.comparator(5,2));
         System.out.println(comp.comparator(2,99));
+
+        myBooks.sort((o1,o2)->comp.comparator(o2.getYear(), o1.getYear()));
+
+        System.out.println(myBooks);
 
 
     }
