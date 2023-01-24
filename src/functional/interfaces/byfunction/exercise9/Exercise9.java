@@ -1,4 +1,4 @@
-package functional.interfaces.byfunction;
+package functional.interfaces.byfunction.exercise9;
 
 /*
 Word Count
@@ -8,4 +8,7 @@ Function implementations that count the words in different ways.
 
 * */
 public class Exercise9 {
+    public static void main(String[] args) {
+        System.out.println(CountWords.countWords("Hello W orl d"));
+    }
 }
