@@ -1,12 +1,22 @@
 package functional.recursion;
 
 /*
-* Create a function that calculates the nth Fibonacci number using recursion. The function should take an integer as an argument and return the nth Fibonacci number.
-* Use the “final” keyword to prevent reassignment of variables. Test the function by calling it with different inputs, make sure that the results are correct.
+ * Create a function that checks if a string is a palindrome using recursion. The function should take a string as an argument and return a boolean indicating whether
+ * the string is a palindrome. Use the charAt method to access the individual characters of the string and the substring method to extract substrings.
  */
 public class Exercise3 {
-    public static void main(String[] args) {
-        Fibonacci.calculate(1);
 
+    public static boolean isPalindrome(String str) {
+        if (str == null || str.length() == 0 || str.length() == 1) {
+            return true;
+        } else if (str.charAt(0) == str.charAt(str.length()-1)) {
+            return isPalindrome(str.substring(1, str.length() - 1));
+        }
+        return false;
     }
+
+    public static void main(String[] args) {
+        System.out.println(isPalindrome("12111111111111111111111111111111111111111111121"));
+    }
+
 }

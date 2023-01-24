@@ -6,9 +6,25 @@ package functional.pure;
 * of variables. Test the class by creating instances of it and calling the methods with different inputs, making sure that the results are correct and the state of
 * the class doesn't change.
  */
-public class Exercise2 {
+public class Exercise1 {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        calculator.add(3,4);
+        Exercise1 calculator = new Exercise1();
+        System.out.println(calculator.add(1, 2));
+        System.out.println(calculator.subtract(1, 2));
+        System.out.println(calculator.multiply(1, 2));
+        System.out.println(calculator.divide(1, 2));
     }
+    public double add (double a, double b) {
+        return a + b;
+    }
+    public double subtract (double a, double b) {
+        return a - b;
+    }
+    public double multiply (double a, double b) {
+        return a * b;
+    }
+    public double divide (double a, double b) {
+        return a / b;
+    }
+
 }
