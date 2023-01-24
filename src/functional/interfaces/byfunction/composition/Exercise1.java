@@ -19,14 +19,14 @@ public class Exercise1 {
 
         //Last function: square root
         Function<Double,Double> squareRoot = o -> Math.sqrt(o);
-        Function<Double,Double> squareRootMR = Math::sqrt;
 
-        //TO - DO: Do the combination
-        //Hint: forEach() or for but the simply one
-        for(int x: numbers){
+        // Composed function:
+        Function<Integer, Double> compose = square.andThen(addOne).andThen(squareRoot);
 
+        // Iterating through the list of numbers
+        for(int number: numbers){
+            System.out.println(compose.apply(number));
         }
 
-        //numbers.forEach();
     }
 }

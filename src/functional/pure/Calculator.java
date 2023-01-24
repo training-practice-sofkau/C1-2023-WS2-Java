@@ -4,9 +4,15 @@ package functional.pure;
 public class Calculator {
 
     //Addition
-    public int add(final int x, final int y){
+    public static int add(final int x, final int y){
         return  x + y;
     }
+    public static int multiply(final int x, final int y) { return x * y; }
+    public static int divide(final int x, final int y) { return x / y; }
+    public static int modulo(final int x, final int y) { return x % y; }
 
-    //TO-DO: The other operations
+    public static int subtract(final int x, final int y) { return x - y; }
+
+
+
 }

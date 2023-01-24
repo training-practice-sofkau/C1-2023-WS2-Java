@@ -1,11 +1,15 @@
 package functional.recursion;
 
 public class Palindrome {
-    public static boolean isPalindrome(String s){
-        if(s.length() == 1 || s.length() == 0) return true;
-        //TO-DO:  Implement the recursion dynamic to follow in order to check is the word is a palindrome
-        return false;
+    public static boolean isPalindrome(String str) {
+        if (str.length() == 1 || str.length() == 0) {
+            return true;
+        }
 
-
+        if (str.toLowerCase().charAt(0) != str.toLowerCase().charAt(str.length() - 1)) {
+            return false;
+        } else{
+            return isPalindrome(str.substring(1, str.length() - 1));
+        }
     }
 }
