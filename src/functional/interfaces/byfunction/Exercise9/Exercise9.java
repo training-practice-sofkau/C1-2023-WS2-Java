@@ -1,4 +1,6 @@
-package functional.interfaces.byfunction;
+package functional.interfaces.byfunction.Exercise9;
+
+import java.util.function.BiFunction;
 
 /*
 Word Count
@@ -8,4 +10,12 @@ Function implementations that count the words in different ways.
 
 * */
 public class Exercise9 {
+    public static void main(String[] args) {
+        int words = WordCount.wordCounter.apply("Hola mundo cruel");
+        System.out.println(words);
+    }
+    
+
+
 }
+

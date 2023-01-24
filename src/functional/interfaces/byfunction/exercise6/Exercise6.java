@@ -10,7 +10,10 @@ Create a class that generates random data of a given type using a Supplier<Strin
 */
 public class Exercise6 {
     public static void main(String[] args) {
-
+    StringGenerator strGenerator = new StringGenerator();
+    IntegerGenerator intGenerator = new IntegerGenerator();
+    System.out.println("Random Name data: " + strGenerator.randStr.get());
+    System.out.println("Random Integer data: " + intGenerator.randInt.get());
 
     }
 }
