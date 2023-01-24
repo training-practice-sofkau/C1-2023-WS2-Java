@@ -13,7 +13,8 @@ public class StringGenerator implements Supplier<String> {
         String finalStri="";
         Random random = new Random();
         for (int i=0; i<=strLenght; i++){
-            int l = random.nextInt()*(aLimit-zlimit);
+            int l = aLimit + (random.nextInt(zlimit-aLimit));
+            //System.out.println("num of: " + l);
             char let = (char) l;
             finalStri += let;
         }
