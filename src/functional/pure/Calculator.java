@@ -4,9 +4,20 @@ package functional.pure;
 public class Calculator {
 
     //Addition
-    public int add(final int x, final int y){
-        return  x + y;
+    public int add(final int x, final int y) {
+        return x + y;
     }
 
-    //TO-DO: The other operations
+    public int subtract(final int x, final int y) {
+        return x - y;
+    }
+
+    public int multiply(final int x, final int y) {
+        return x * y;
+    }
+
+    public float divide(final float x, final float y) {
+        return x / y;
+    }
+
 }
