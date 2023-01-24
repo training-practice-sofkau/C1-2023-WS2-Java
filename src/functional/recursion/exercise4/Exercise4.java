@@ -1,4 +1,4 @@
-package functional.recursion;
+package functional.recursion.exercise4;
 
 /*
 * Create a function that checks if a string is a palindrome using recursion. The function should take a string as an argument and return a boolean indicating whether
@@ -6,7 +6,7 @@ package functional.recursion;
  */
 public class Exercise4 {
     public static void main(String[] args) {
-
+        System.out.println(Palindrome.isPalindrome("rotator"));
     }
 
 }

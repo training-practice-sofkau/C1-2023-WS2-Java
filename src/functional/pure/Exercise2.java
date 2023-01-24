@@ -9,6 +9,13 @@ package functional.pure;
 public class Exercise2 {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        calculator.add(3,4);
+
+        int x = 3;
+        int y = 4;
+
+        System.out.println("Add: " + calculator.add(x,y));
+        System.out.println("Subtract: " + calculator.subtract(x,y));
+        System.out.println("Multiply: " + calculator.multiply(x,y));
+        System.out.println("Divide: " + calculator.divide(x,y));
     }
 }
