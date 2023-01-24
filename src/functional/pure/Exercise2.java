@@ -8,7 +8,23 @@ package functional.pure;
  */
 public class Exercise2 {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        calculator.add(3,4);
+        Exercise2 calculator = new Exercise2();
+        System.out.println(calculator.add(1, 2));
+        System.out.println(calculator.subtract(1, 2));
+        System.out.println(calculator.multiply(1, 2));
+        System.out.println(calculator.divide(1, 2));
     }
+    public double add (double a, double b) {
+        return a + b;
+    }
+    public double subtract (double a, double b) {
+        return a - b;
+    }
+    public double multiply (double a, double b) {
+        return a * b;
+    }
+    public double divide (double a, double b) {
+        return a / b;
+    }
+
 }
