@@ -1,11 +1,8 @@
 package functional.interfaces.byfunction;
-
 /*
-Word Count
-Create a class that counts the number of words in a given string using a Function<String, Integer>.
-Use the apply method of the Function interface to count the words. Test the class by passing different
-Function implementations that count the words in different ways.
-
+String replacement
+Create a function that replaces all occurrences of a given character in a string with another character, using a functional approach.
+The function should take a string, and two characters as arguments and return the modified string. Use the replace method to replace the characters.
 * */
 public class Exercise9 {
 }

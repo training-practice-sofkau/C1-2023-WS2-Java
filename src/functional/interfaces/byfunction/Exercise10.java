@@ -1,8 +1,8 @@
 package functional.interfaces.byfunction;
-/*
-String replacement
-Create a function that replaces all occurrences of a given character in a string with another character, using a functional approach.
-The function should take a string, and two characters as arguments and return the modified string. Use the replace method to replace the characters.
-* */
+/* Phonebook
+* Create a class that implements a phonebook using a functional approach.
+* The class should have methods for adding a contact, removing a contact, searching a contact, and listing all contacts.
+* The methods should use functional interfaces such as Consumer<T>, Supplier<T>, Predicate<T> and Function<T, R>.
+ */
 public class Exercise10 {
 }
