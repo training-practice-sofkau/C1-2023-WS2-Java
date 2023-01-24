@@ -7,4 +7,8 @@ package functional.pure;
 * the class doesn't change.
  */
 public class Exercise2 {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        calculator.add(3,4);
+    }
 }

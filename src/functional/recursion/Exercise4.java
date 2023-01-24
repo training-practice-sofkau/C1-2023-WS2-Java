@@ -5,4 +5,8 @@ package functional.recursion;
 * the string is a palindrome. Use the charAt method to access the individual characters of the string and the substring method to extract substrings.
  */
 public class Exercise4 {
+    public static void main(String[] args) {
+
+    }
+
 }

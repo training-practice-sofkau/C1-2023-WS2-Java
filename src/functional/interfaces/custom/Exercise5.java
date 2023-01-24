@@ -9,4 +9,7 @@ package functional.interfaces.custom;
 * for example, to sort a list of objects, or to find the minimum or maximum element in a collection.
  */
 public class Exercise5 {
+    public static void main(String[] args) {
+
+    }
 }
