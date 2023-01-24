@@ -6,7 +6,12 @@ package functional.recursion;
  */
 public class Exercise3 {
     public static void main(String[] args) {
-        Fibonacci.calculate(1);
+
+        System.out.println(Fibonacci.calculate(1));
+        System.out.println(Fibonacci.calculate(2));
+        System.out.println(Fibonacci.calculate(3));
+        System.out.println(Fibonacci.calculate(10));
+        System.out.println(Fibonacci.calculate(14));
 
     }
 }
