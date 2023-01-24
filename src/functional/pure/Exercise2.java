@@ -8,7 +8,21 @@ package functional.pure;
  */
 public class Exercise2 {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        calculator.add(3,4);
+        int i = 3;
+        int j = 5;
+
+        System.out.println("Addition of " + i + " and " + j + " is equals to " +Calculator.add(i,j));
+        System.out.println("Subtraction of " + i + " and " + j + " is equals to " +Calculator.subtract(i,j));
+        System.out.println("Multiply of " + i + " and " + j + " is equals to " +Calculator.multiply(i,j));
+        System.out.println("Divide of " + i + " and " + j + " is equals to " +Calculator.divide(i,j));
+        try {
+            System.out.println("Divide of " + i + " and " + 0 + " is equals to " +Calculator.divide(i,0));
+        }catch (Exception e) {
+            System.out.println(e);
+        }
+
+
+
+
     }
 }
