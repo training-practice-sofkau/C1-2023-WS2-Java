@@ -23,10 +23,10 @@ public class Exercise1 {
 
         //TO - DO: Do the combination
         //Hint: forEach() or for but the simply one
+
         for(int x: numbers){
-
+            System.out.println(square.andThen(addOne).andThen(squareRoot).apply(x));
         }
-
         //numbers.forEach();
     }
 }

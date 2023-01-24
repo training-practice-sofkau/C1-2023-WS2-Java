@@ -11,6 +11,10 @@ Create a class that generates random data of a given type using a Supplier<Strin
 public class Exercise6 {
     public static void main(String[] args) {
 
+        StringGenerator stg = new StringGenerator();
+        IntegerGenerator itg = new IntegerGenerator();
 
+        System.out.println("Random word:   " + stg.get());
+        System.out.println("Random number: " + itg.get());
     }
 }

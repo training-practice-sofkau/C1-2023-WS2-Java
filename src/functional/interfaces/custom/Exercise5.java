@@ -11,5 +11,22 @@ package functional.interfaces.custom;
 public class Exercise5 {
     public static void main(String[] args) {
 
+        Comparision com = new Comparision();
+
+        Integer i1 = 4;
+        Integer i2 = 8;
+        Integer i3 = 8;
+
+        System.out.println(com.comparator(i1, i2));
+        System.out.println(com.comparator(i2, i1));
+        System.out.println(com.comparator(i2, i3));
+
+        String s1 = "Love";
+        String s2 = "Animals";
+        String s3 = "Bedroom";
+
+        System.out.println(com.comparator(s1, s2));
+        System.out.println(com.comparator(s2, s1));
+        System.out.println(com.comparator(s2, s3));
     }
 }
