@@ -1,4 +1,7 @@
 package functional.interfaces.custom;
+
+import java.util.function.Function;
+
 /*
 * Create a custom functional interface that represents a comparison between two objects of the same type.
 * The interface should have a single abstract method that takes two objects of the same type and returns an integer,
@@ -12,5 +15,6 @@ public class Exercise5 {
     public static void main(String[] args) {
         Comparision compare = new Comparision();
         System.out.println(compare.comparator(30,12));
+        System.out.println(compare.comparator("Hi","Welcome"));
     }
 }
