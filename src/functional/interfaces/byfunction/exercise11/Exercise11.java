@@ -1,4 +1,4 @@
-package functional.interfaces.byfunction;
+package functional.interfaces.byfunction.exercise11;
 /*
 * Number Comparison
 Create a function that compares two integers using a functional approach. The function should take two integers as arguments,
