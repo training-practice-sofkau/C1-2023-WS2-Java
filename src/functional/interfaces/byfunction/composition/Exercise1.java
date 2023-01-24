@@ -25,6 +25,8 @@ public class Exercise1 {
         //Hint: forEach() or for but the simply one
         for(int x: numbers){
 
+            System.out.println(square.andThen(addOne).andThen(squareRootMR).apply(x));
+
         }
 
         //numbers.forEach();
