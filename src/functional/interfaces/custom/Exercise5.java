@@ -10,6 +10,7 @@ package functional.interfaces.custom;
  */
 public class Exercise5 {
     public static void main(String[] args) {
-
+        Comparision compare = new Comparision();
+        System.out.println(compare.comparator(30,12));
     }
 }
