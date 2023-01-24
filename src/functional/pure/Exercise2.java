@@ -1,5 +1,6 @@
 package functional.pure;
 
+
 /*
 * Create a simple calculator class that implements basic mathematical operations (addition, subtraction, multiplication, division) using pure functions.
 * Each function should take two arguments and return the result of the operation without modifying any external state. Use “final” keyword to prevent reassignment
@@ -8,7 +9,11 @@ package functional.pure;
  */
 public class Exercise2 {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        calculator.add(3,4);
+
+        System.out.println(Calculator.add(3,4));
+        System.out.println(Calculator.divide(10,5));
+        System.out.println(Calculator.modulo(3,4));
+        System.out.println(Calculator.subtract(3,20));
+        System.out.println(Calculator.multiply(7,4));
     }
 }
