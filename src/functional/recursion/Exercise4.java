@@ -7,6 +7,9 @@ package functional.recursion;
 public class Exercise4 {
     public static void main(String[] args) {
 
+        Palindrome palindrome = new Palindrome();
+        System.out.println("reviver is a palindrome? "+palindrome.isPalindrome("reviver"));
+        System.out.println("Julian is a palindrome? "+palindrome.isPalindrome("Julian"));
     }
 
 }
