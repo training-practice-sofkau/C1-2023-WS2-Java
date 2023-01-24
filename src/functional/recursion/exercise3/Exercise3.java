@@ -1,4 +1,4 @@
-package functional.recursion;
+package functional.recursion.exercise3;
 
 /*
 * Create a function that calculates the nth Fibonacci number using recursion. The function should take an integer as an argument and return the nth Fibonacci number.
@@ -6,7 +6,6 @@ package functional.recursion;
  */
 public class Exercise3 {
     public static void main(String[] args) {
-        Fibonacci.calculate(1);
-
+        System.out.println(Fibonacci.calculate(17));
     }
 }

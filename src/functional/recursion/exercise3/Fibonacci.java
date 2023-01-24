@@ -1,4 +1,4 @@
-package functional.recursion;
+package functional.recursion.exercise3;
 
 public class Fibonacci {
     //Started numbers: 0 & 1
@@ -7,7 +7,6 @@ public class Fibonacci {
         if( n == 0 ) return 0;
         if( n == 1) return 1;
 
-        //TO-DO: Implement the recursion dynamic to follow in order to show the fibonnaci serie
-        return 0;
+        return calculate(n-1) + calculate(n-2);
     }
 }

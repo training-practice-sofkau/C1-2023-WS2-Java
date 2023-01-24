@@ -1,4 +1,4 @@
-package functional.recursion;
+package functional.recursion.exercise4;
 
 /*
 * Create a function that checks if a string is a palindrome using recursion. The function should take a string as an argument and return a boolean indicating whether

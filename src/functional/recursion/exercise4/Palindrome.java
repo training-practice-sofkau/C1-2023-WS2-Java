@@ -1,4 +1,4 @@
-package functional.recursion;
+package functional.recursion.exercise4;
 
 public class Palindrome {
     public static boolean isPalindrome(String s){
