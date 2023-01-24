@@ -21,9 +21,13 @@ public class Exercise1 {
         Function<Double,Double> squareRoot = o -> Math.sqrt(o);
         Function<Double,Double> squareRootMR = Math::sqrt;
 
+        Function <Integer, Double> concatenation = square.andThen(addOne).andThen(squareRoot);
+
         //TO - DO: Do the combination
         //Hint: forEach() or for but the simply one
         for(int x: numbers){
+            System.out.println("The result for "+x+" is:");
+            System.out.println(concatenation.apply(x));
 
         }
 
