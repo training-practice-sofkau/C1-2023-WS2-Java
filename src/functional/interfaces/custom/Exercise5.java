@@ -10,6 +10,19 @@ package functional.interfaces.custom;
  */
 public class Exercise5 {
     public static void main(String[] args) {
+        Comparision comp = new Comparision();
+        System.out.println("The result of comparing 5 and 5 is:");
+        System.out.println(comp.comparator(5,5));
+        System.out.println("The result of comparing 5 and 10 is:");
+        System.out.println(comp.comparator(5,10));
+        System.out.println("The result of comparing 10 and 5 is:");
+        System.out.println(comp.comparator(10,5));
+        System.out.println("The result of comparing 'Hi' and 'Hi' is:");
+        System.out.println(comp.comparator("Hi","Hi"));
+        System.out.println("The result of comparing 'Hi' and 'Hello' is:");
+        System.out.println(comp.comparator("Hi","Hello"));
+        System.out.println("The result of comparing 'Hello' and 'Hi' is:");
+        System.out.println(comp.comparator("Hello","Hi"));
 
     }
 }
