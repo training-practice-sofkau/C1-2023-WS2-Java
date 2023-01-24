@@ -7,7 +7,12 @@ package functional.recursion;
 public class Exercise4 {
     public static void main(String[] args) {
 
-        System.out.println(Palindrome.isPalindrome(""));
+        System.out.println(Palindrome.isPalindrome("kayak"));
+        System.out.println(Palindrome.isPalindrome("level"));
+        System.out.println(Palindrome.isPalindrome("ana"));
+        System.out.println(Palindrome.isPalindrome("Ana"));
+        System.out.println(Palindrome.isPalindrome("diego"));
+
 
     }
 
