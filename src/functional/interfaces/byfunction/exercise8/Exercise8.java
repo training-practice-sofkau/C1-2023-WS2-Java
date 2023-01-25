@@ -1,4 +1,4 @@
-package functional.interfaces.byfunction;
+package functional.interfaces.byfunction.exercise8;
 
 /*
 *  Transformation
