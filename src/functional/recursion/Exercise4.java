@@ -6,7 +6,8 @@ package functional.recursion;
  */
 public class Exercise4 {
     public static void main(String[] args) {
-
+        System.out.println(Palindrome.isPalindrome("loal"));
+        System.out.println(Palindrome.isPalindrome("lool"));
     }
 
 }

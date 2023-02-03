@@ -6,7 +6,13 @@ package functional.recursion;
  */
 public class Exercise3 {
     public static void main(String[] args) {
-        Fibonacci.calculate(1);
-
+        // set position you want to know the value sequence
+        int num = 20;
+        for (int i = 0; i < num; i++) {
+            System.out.println(Fibonacci.calculate(i));
+        }
+        int fib = Fibonacci.calculate(num);
+        System.out.println(fib);
+        System.out.println("Value in position " + num + " is: " + fib);
     }
 }
